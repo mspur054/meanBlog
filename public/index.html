@@ -13,6 +13,18 @@
 		<input ng-model="post.title" placeholder="title">
 		<textarea ng-model="post.body" placeholder="body"></textarea>
 		<button ng-click="createPost(post)" class="btn">Post</button>
+		
+		<div ng-repeat="post in posts">
+			<h2>
+				{{post.title}}
+				<a class="gicon" ng-click="deletePost(post._id)">
+					<span>del</span>
+				</a>
+				<a class="gicon" ng-click="editPost(post._id)"><span class="edit">edit</span></a>
+			</h2>
+			<em>{{post.posted}}</em>
+			<span>{{post.body}}</span>
+		</div>	
 	</div>
 </body>
 </html>
