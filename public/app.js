@@ -23,7 +23,8 @@
 				console.log(post);
 				$http
 					.put("/api/blogpost/"+post._id, post);
-
+					//add success/failure promises
+					getAllPosts();
 			}
 
 
