@@ -8,12 +8,25 @@
 
 			$scope.deletePost = deletePost;
 			$scope.editPost = editPost;
+			$scope.updatePost = updatePost;
 
+
+			$scope.busyEditing = false;
 
 			function init(){
 				getAllPosts();
 			}
 			init();
+
+			function updatePost(post){
+				$scope.busyEditing = false;
+				console.log(post);
+				$http
+					.put("/api/blogpost/"+post._id, post);
+
+			}
+
+
 
 
 			function editPost(postID){
@@ -21,6 +34,7 @@
 					.get("/api/blogpost/" + postID)
 					.then(function(post){
 						$scope.post = post.data;
+						$scope.busyEditing = true;
 					}, function(error){
 						console.log(error);
 					});

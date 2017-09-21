@@ -8,12 +8,21 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="menu-container">
+		<div class="menu">
+			<div class="newPost">New Post</div>
+			<div class="login">Login</div>
+		</div>
+	</div>
+
 	<div class="flex-outer" ng-controller="BlogController">
-		<h1>Blog</h1>
+		<h1 class="title">Blog</h1>
 		<input ng-model="post.title" placeholder="title">
 		<textarea ng-model="post.body" placeholder="body"></textarea>
-		<button ng-click="createPost(post)" class="btn">Post</button>
-		
+		<ng-switch on="busyEditing">
+			<button ng-switch-default ng-click="createPost(post)" class="btn">Post</button>
+			<button ng-switch-when="true" ng-click="updatePost(post)" class="btn">Update</button>
+		</ng-switch>
 		<div ng-repeat="post in posts">
 			<h2>
 				{{post.title}}

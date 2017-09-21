@@ -1,8 +1,8 @@
-var express = require('express');
+const express = require('express');
 var app = express();
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/blog2017', { useMongoClient: true, promiseLibrary: global.Promise });
 
 const PostSchema = mongoose.Schema({
@@ -22,7 +22,27 @@ app.post("/api/blogpost", createPost);
 app.get("/api/blogpost", getAllPosts);
 app.delete("/api/blogpost/:id", deletePost);
 app.get("/api/blogpost/:id", getPostByID);
+app.put("/api/blogpost/:id", updatePost);
 
+
+
+function updatePost(req,res){
+	const postID = req.params.id;
+	const post = req.body;
+
+	PostModel
+		.update({_id: postID},{
+			title: post.title,
+			body: post.body
+		})
+		.then(
+			function(status){
+				res.sendStatus(200);
+			},
+			function(error){
+				res.sendStatus(400);
+			});
+}
 
 function getPostByID(req, res){
 	const postID = req.params.id;
