@@ -4,6 +4,7 @@
 		.controller("BlogController",BlogController);
 
 		function BlogController($scope, $http){
+			//Controls the blog posts
 			$scope.createPost = createPost;
 
 			$scope.deletePost = deletePost;
