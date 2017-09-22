@@ -9,7 +9,7 @@ a {
 	text-decoration: none;
 }
 
-.nav{
+nav{
 	position: fixed;
 	text-transform: uppercase;
 	min-width: 100%;
@@ -21,6 +21,14 @@ a {
 	max-width: 1200px;
 	padding: 0 2%;
 }
+
+nav .wrapper {
+	 align-items: center;
+	 display: flex;
+	 justify-content: space-between;
+}
+
+
 
 
 .flex-outer{
