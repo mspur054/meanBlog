@@ -25,6 +25,7 @@ app.get("/api/blogpost/:id", getPostByID);
 app.put("/api/blogpost/:id", updatePost);
 
 //TODO: add OAUTH and User Authentication for admin
+//TODO: add comments, last updated to postSchema
 
 function updatePost(req,res){
 	const postID = req.params.id;

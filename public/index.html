@@ -11,14 +11,20 @@
 	<nav id="nav" class="nav" role="navigation">
 		<div class="wrapper">
 			<ul>
-				<li><a href="#">New Post</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Blog</a></li>
 				<li><a href="#">Login</a></li>
 			</ul>
 		</div>
 	</nav>
+	<header class="">
+		<h1 class="title">Blog</h1>
+	</header>
+
 
 	<div class="flex-outer" ng-controller="BlogController">
-		<h1 class="title">Blog</h1>
+		
 		<input ng-model="post.title" placeholder="title">
 		<textarea ng-model="post.body" placeholder="body"></textarea>
 		<ng-switch on="busyEditing">

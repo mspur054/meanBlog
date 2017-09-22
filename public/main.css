@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+header {padding-top: 100px;}
 
 body{
 	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 2em;
+	margin:0;
 }
 
 a {
@@ -13,7 +16,7 @@ nav{
 	position: fixed;
 	text-transform: uppercase;
 	min-width: 100%;
-	background-color: #709504;
+	background-color: #D32F2F;;
 }
 
 .wrapper{
@@ -29,7 +32,26 @@ nav .wrapper {
 }
 
 
+nav ul {
+	  display: flex;
+	  justify-content: space-between;
+	  list-style-type: none;
+	  width: 50%;
+}
+nav a {
+		color: white;
+		text-decoration: none;
+		transition: all .5s ease;
+  
+		&:hover {color:black;}
+}
 
+
+  
+nav	li  {
+	  display: inline-block;
+	}
+   
 
 .flex-outer{
 	display: flex;
@@ -60,8 +82,8 @@ nav .wrapper {
 
 }
 
-.title {
+/*.title {
 	text-transform: uppercase;
 	line-height: 2em;
-}
+}*/
 
