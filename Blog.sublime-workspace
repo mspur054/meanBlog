@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"flex",
+				"flex-grow"
+			],
+			[
 				"get",
 				"get\tGet Elements"
 			],
@@ -22,10 +26,6 @@
 			[
 				"max",
 				"max-width"
-			],
-			[
-				"flex",
-				"flex-direction"
 			]
 		]
 	},
@@ -35,7 +35,7 @@
 			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 874,
+				"buffer_size": 1217,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -44,7 +44,7 @@
 			"file": "public/app.js",
 			"settings":
 			{
-				"buffer_size": 1079,
+				"buffer_size": 1410,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -53,7 +53,7 @@
 			"file": "public/main.css",
 			"settings":
 			{
-				"buffer_size": 1241,
+				"buffer_size": 775,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -62,27 +62,9 @@
 			"file": "server.js",
 			"settings":
 			{
-				"buffer_size": 1783,
+				"buffer_size": 2168,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Matt/AppData/Roaming/Sublime Text 3/Packages/User/Github Tools.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 81,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Matt/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
-			"settings":
-			{
-				"buffer_size": 146,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "untitled.sublime-build"
 			}
 		}
 	],
@@ -93,10 +75,62 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 341.0,
-		"last_filter": "gitr\t",
+		"height": 215.0,
+		"last_filter": "git push",
 		"selected_items":
 		[
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git quic",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add Remote"
+			],
+			[
+				"git help",
+				"Git: Help"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git stat\t",
+				"Git: Status"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git \t",
+				"Git: Add Tag"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
 			[
 				"gitr\t",
 				"Github: Repository"
@@ -134,7 +168,7 @@
 				"Package Control: List Packages"
 			]
 		],
-		"width": 587.0
+		"width": 565.0
 	},
 	"console":
 	{
@@ -159,6 +193,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Matt/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
+		"/C/Users/Matt/AppData/Roaming/Sublime Text 3/Packages/User/Github Tools.sublime-settings",
 		"/C/Users/Matt/Documents/Blog/public/app.js",
 		"/C/Users/Matt/Documents/Blog/mean-blog/server.js",
 		"/C/Users/Matt/Documents/Blog/Node/index.html",
@@ -198,7 +234,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -207,15 +243,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 874,
+						"buffer_size": 1217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								617,
-								617
+								666,
+								666
 							]
 						],
 						"settings":
@@ -227,7 +263,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -236,15 +272,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1079,
+						"buffer_size": 1410,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								499,
-								499
+								195,
+								195
 							]
 						],
 						"settings":
@@ -257,7 +293,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -266,15 +302,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1241,
+						"buffer_size": 775,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								308,
-								308
+								212,
+								212
 							]
 						],
 						"settings":
@@ -295,15 +331,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1783,
+						"buffer_size": 2168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								939,
-								939
+								975,
+								975
 							]
 						],
 						"settings":
@@ -312,68 +348,10 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 60.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Matt/AppData/Roaming/Sublime Text 3/Packages/User/Github Tools.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 81,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								81,
-								81
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Matt/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 146,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								125,
-								125
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -417,6 +395,22 @@
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 136.0
+	},
+	"output.git-pull":
+	{
+		"height": 136.0
+	},
+	"output.git-push":
+	{
+		"height": 136.0
+	},
+	"output.git-remote":
+	{
+		"height": 136.0
 	},
 	"pinned_build_system": "Packages/User/Node.sublime-build",
 	"project": "Blog.sublime-project",
