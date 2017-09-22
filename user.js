@@ -1,10 +1,11 @@
-var mongoose = require('mongoose')
-,Schema = mongoose.Schema;
+/*var mongoose = require('mongoose')
+,Schema = mongoose.Schema
+,ObjectId = Schema.ObjectId;
 
 var userSchema = new Schema({
     _id: {
     type: String,
-    default: id.generate()
+    default: ObjectId
     },
     firstName:{
         type: String,
@@ -20,4 +21,4 @@ var userSchema = new Schema({
  
 });
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema); */
