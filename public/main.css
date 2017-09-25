@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+<<<<<<< HEAD
+@media screen and (max-width: 768px) {
+	ul {
+		background-color: blueviolet;
+		display: block;
+		height: 0;
+		list-style-type: none;
+		opacity: 0;
+		text-align: center;
+		transition: all 1s ease;
+		width: 100%;
+		visibility: hidden;
+	  }
+	  li {
+		border-bottom: 2px solid #5C4E4E;
+		color: #BB5F5F;
+		display: block;
+		font-size: 1.5em;
+		padding: 2em 0;
+	}
+}
+
+
+
+=======
+>>>>>>> 397f7acdfa734a71cfd658264b1b00f3718cf9eb
 header {padding-top: 100px;}
 
 body{
@@ -43,9 +69,21 @@ nav a {
 		text-decoration: none;
 		transition: all .5s ease;
   
+<<<<<<< HEAD
+		
+=======
 		&:hover {color:black;}
+>>>>>>> 397f7acdfa734a71cfd658264b1b00f3718cf9eb
 }
 
+nav a:hover{
+	color:black;
+}
+  
+nav	li  {
+	  display: inline-block;
+	}
+   
 
   
 nav	li  {
@@ -77,6 +115,18 @@ nav	li  {
 	width: 100%;
 }
 
+.btnUpdate {
+	background-color : #289B6F;
+	border-width: 0;
+	
+	padding: 0;
+	border-radius: 2px;
+	box-shadow:  0 1px 4px rgba(0,0,0,.6);
+	color: #ecf0f1;
+	flex: 1;
+	width: 100%;
+}
+
 .gicon{
 	text-align: right;
 
@@ -86,4 +136,17 @@ nav	li  {
 	text-transform: uppercase;
 	line-height: 2em;
 }*/
+<<<<<<< HEAD
 
+#menu-toggle {display: none;}
+
+.label-toggle {display: none;}
+
+=======
+>>>>>>> 397f7acdfa734a71cfd658264b1b00f3718cf9eb
+
+#menu-toggle:checked ~ ul {
+	opacity: 1;
+	height: 100vh;
+	visibility: visible;
+}

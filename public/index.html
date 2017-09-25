@@ -10,6 +10,8 @@
 <body>
 	<nav id="nav" class="nav" role="navigation">
 		<div class="wrapper">
+				<input type="checkbox" id="menu-toggle">
+				<label for="menu-toggle" class="label-toggle"></label>
 			<ul>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Portfolio</a></li>
@@ -29,7 +31,7 @@
 		<textarea ng-model="post.body" placeholder="body"></textarea>
 		<ng-switch on="busyEditing">
 			<button ng-switch-default ng-click="createPost(post)" class="btn">Post</button>
-			<button ng-switch-when="true" ng-click="updatePost(post)" class="btn">Update</button>
+			<button ng-switch-when="true" ng-click="updatePost(post)" class="btnUpdate">Update</button>
 		</ng-switch>
 		<div ng-repeat="post in posts">
 			<h2>

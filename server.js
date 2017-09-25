@@ -3,21 +3,17 @@ var app = express();
 const bodyParser = require('body-parser');
 
 const mongoose = require('mongoose');
+Post = require('./server/models/post');
+
 mongoose.connect('mongodb://localhost/blog2017', { useMongoClient: true, promiseLibrary: global.Promise });
 
-const PostSchema = mongoose.Schema({
-	title: {type:String, required: true},
-	body: String,
-	tag:{type:String, enum: ['Technology', 'Learning','Economy','Javascript']},
-	posted: {type:Date, default: Date.now}
-}, {collection: 'post'});
-
-const PostModel = mongoose.model("PostModel", PostSchema);
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json()); //for parsing json
 app.use(bodyParser.urlencoded({extended:true})); //for parsing applications
 
+<<<<<<< HEAD
+=======
 app.post("/api/blogpost", createPost);
 app.get("/api/blogpost", getAllPosts);
 app.delete("/api/blogpost/:id", deletePost);
@@ -101,11 +97,17 @@ function createPost(req, res){
 		); //insert into db
 	console.log(post);
 	res.json(post);
+>>>>>>> 397f7acdfa734a71cfd658264b1b00f3718cf9eb
 
-}
+const routes = require('./server/routes/postRoutes');
+//register routes to application
+routes(app);
 
 
+//middleware
+app.use(function(req, res) {
+	res.status(404).send({url: req.originalUrl + ' not found'})
+});
 
- 
 app.listen(3000);
 
